@@ -1,0 +1,448 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #f5f3f3
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+header {
+    padding: 20px 0 0 0;
+    background: white;
+    text-align: center;
+}
+@media (min-width: 750px) {
+    header {
+        text-align: left;
+    }
+}
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+#hero {
+    background-image:url(../img/hero.jpg);
+    height: 350px;
+    background-size: cover;
+}
+#encabezado {
+    margin: 30px 0;
+}
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+.contenido-hero {
+    margin-top: 80px;
+    color: white;
+}
+.contenido-hero form {
+    position: relative;
+    margin-bottom: 0;
+}
+.contenido-hero form #buscador {
+    height: 50px;
+    margin-bottom: 0;
+}
+.contenido-hero form .submit-buscador {
+    position: absolute;
+    right:0;
+    top:0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border:none;
+}
+
+
+.barra {
+    padding: 20px 0;
+    background: #741d51; /* Old browsers */
+    background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #741d51 0%,#e44e52 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #741d51 0%,#e44e52 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
+}
+
+.barra p {
+    margin:0;
+    color: white;
+}
+.icono {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+@media (min-width: 750px) {
+    .icono {
+        margin-bottom:0;
+    }
+}
+.icono1 {
+    background-image: url(../img/icono1.png);
+}
+.icono2 {
+    background-image: url(../img/icono2.png);
+}
+.icono3 {
+    background-image: url(../img/icono3.png);
+}
+
+#lista-cursos .row {
+    margin-bottom:20px;
+}
+.agregar-carrito {
+    margin:10px 0;
+}
+
+.card {
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    background: white;
+}
+@media (min-width: 550px) {
+    .card {
+        text-align: left;
+    }
+}
+.info-card  {
+    padding: 10px 20px;
+}
+
+.info-card p, 
+.card h4 {
+    margin-bottom: 5px;
+}
+.info-card .precio {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+
+.footer {
+    margin-top: 40px;
+    border-top:1px solid #aaa;;
+    padding-top: 40px;   
+}
+.footer .menu a{
+display: block;
+margin-bottom: 10px;
+text-decoration: none;
+}
+
+
+
+/**********************************************************************/
+/**************************MIS AJUSTES CSS****************************/
+/*********************************************************************/
+
+
+.nav_bg{
+    /*display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: space-around; */
+    display: flex;
+   /* padding: 0 10px;
+    max-width: 100%;
+    margin-top: 10px; */
+    background-color:rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+}
+.nav_botones{
+    display: flex; /* Mantiene los elementos en fila */
+    overflow-x: auto; /* Habilita el desplazamiento horizontal */
+    white-space: nowrap; /* Evita que los enlaces se envuelvan a la siguiente línea */
+    scrollbar-width: thin; /* Para navegadores Firefox, hace que la barra sea más delgada */
+    scrollbar-color: gray transparent; /* Color de la barra y el fondo de la barra de desplazamiento para Firefox */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+/* Para navegadores WebKit (Chrome, Safari) */
+.nav_botones::-webkit-scrollbar {
+    height: 8px; /* Altura de la barra de desplazamiento */
+}
+
+.link1{
+    /* background-color: rgb(247, 236, 217);
+    border-radius: 1.2rem;
+    color: rgb(53,65 ,41);
+    padding: 10px;
+    text-align: center;
+    border: 2.5px solid rgb(53,65 ,41);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 2px;
+    margin-bottom: 0;
+    padding: 3px; */
+
+    
+    display: inline-block; /* Permite establecer un tamaño fijo */
+    padding: 2px 20px; /* Espaciado interno ajustado */
+    height: 12.5px; /* Altura fija reducida a un cuarto */
+    line-height: 12.5px; /* Centra el texto verticalmente */
+    background-color: rgb(247, 236, 217); /* Color de fondo */
+    color: rgb(53,65 ,41); /* Color del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Efecto de transición al pasar el mouse */
+    margin-right: 5px; /* Espacio a la derecha de cada botón */
+    font-family: 'Times New Roman', Times, serif;
+
+    border: 2.5px solid rgb(53,65 ,41);
+}
+
+/***/
+
+/***/
+.landing{
+    width: 100%;
+    aspect-ratio: 12/16;
+    background-image: url(../img/nuevo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+
+.enlace{
+    position: absolute; 
+    top: 80px;
+    left: 158px; 
+
+    
+    
+}
+
+
+.homeButton:hover{
+    width: 40px;
+}
+
+body{
+    background-color: white;
+}
+header{
+    margin: 0;
+    padding: 0;
+}
+
+.botonCompra{
+    background-color: rgb(243, 146, 33);
+    border-radius: 15px;
+    color: rgb(247, 236, 217);
+    padding: 10px 40px;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+/*subtitulo principal de la pagina*/
+
+.encabezado{
+   color: rgb(53,65 ,41);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.precios{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color:rgb(53,65 ,41);
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.stock{
+   color:  rgb(20, 235, 20);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card{
+    padding: 20px;
+}
+
+/*propiedades al interactuar en los link*/
+
+
+/*nav que no scrollea*/
+.nav{
+    position: sticky;
+    top: 0; 
+    z-index: 1000; /*para que quede por encima del contenido*/
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*para que se vuelvan fila*/
+.nav {
+    position: sticky; 
+    top: 0;  
+    z-index: 1000; 
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo sólido */
+    
+}
+
+/* .desliza{
+    
+    
+} */
+
+.eslogan1{
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(53,65 ,41);
+    border-bottom: 0.1rem black solid;
+    padding: 1rem;
+}
+.eslogan2{
+    font-weight: 500;
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(53,65 ,41);
+    margin-bottom: 0;
+}
+.eslogan3{
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(53,65 ,41);
+}
+.eslogan4{
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(53,65 ,41);
+}
+.eslogan5{
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(53,65 ,41);
+}
+.menus{
+    display: flex;
+    flex-direction: column;
+
+}
+.total_eslogan{
+    border: 1px rgb(78, 82, 75) solid;
+    padding: 2rem;
+    border-radius: 2rem;
+    
+}
+.containers{
+    margin: 0 auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: 100%;
+  
+}
+.enlaces{
+    margin-bottom: 10px;
+    
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+img.redes{
+    margin-right: 10px;
+}
+.info{
+    font-family: 'Times New Roman', Times, serif;
+}
+.card{
+    
+    margin-bottom: 40px;
+}
+.princip{
+    display: flex; /* Usa flexbox para alinear las imágenes */
+    justify-content: space-between; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en múltiples filas */
+
+}
+
+.princip img {
+    width: 100%; /* Las imágenes ocuparán el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 300px; /* Ajusta este valor según lo necesites */
+}
+.princip .info{
+    font-size:15px;
+}
+.sec1{
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact img{
+    width: 25px;
+    height: 25px;
+    margin-left: 4rem;
+    
+}
+.pri{
+    color: cadetblue;
+    font-size: 12px;
+}
